@@ -16,6 +16,7 @@
 	rs = pstmt.executeQuery(); //select문 실행
 
 %>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -45,6 +46,8 @@ tr:nth-child(even) {
 			location.href="/board/regist_form.jsp";
 		});
 	});//onload
+	
+
 </script>
 </head>
 <body>
@@ -64,6 +67,7 @@ tr:nth-child(even) {
     <td>26</td>
     <td>
 		<a href="/board/detail.jsp?notice_id=<%=rs.getInt("notice_id")%>"><%=rs.getString("title")%></a>
+
 	</td>
     <td><%=rs.getString("author")%></td>
 	<td><%=rs.getString("regdate")%></td>

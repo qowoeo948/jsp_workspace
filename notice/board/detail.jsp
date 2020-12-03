@@ -22,8 +22,6 @@
 
 	rs.next(); //커서 한칸 전진!!
 
-
-
 %>
 <!DOCTYPE html>
 <html>
@@ -119,7 +117,7 @@ textarea{
 
 <div class="container">
   <form>
-  <input  type="hidden" name="notice_id" value="<%=rs.getInt("notice_id")%>">
+	 <input  type="hidden" name="notice_id" value="<%=rs.getInt("notice_id")%>">
 
 	<label for="fname">First Name</label>
     <input type="text" id="fname" name="author" value="<%=rs.getString("author")%>">
